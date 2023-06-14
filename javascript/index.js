@@ -28,3 +28,21 @@ function calculate() {
     window.location.reload();
   }
   
+// //   logic
+// Certainly! Let's go through the logic of the code step by step:
+
+// The calculate() function is called when the page loads or when a specific event occurs. It uses the setInterval() method to execute a piece of code repeatedly at a specified interval (in this case, every 1000 milliseconds or 1 second).
+
+// Inside the setInterval() function, the code retrieves the birthdate value from an input field with the id 'birthdate' and creates a new Date object with it. This represents the user's birthdate.
+
+// It then creates another Date object representing the current date and time, which is stored in the now variable.
+
+// The difference between the current date and the birthdate is calculated in milliseconds by subtracting the birthdate's time from the current time.
+
+// The age is then calculated by converting the milliseconds to seconds, minutes, hours, days, months, and years. Each conversion is performed by dividing the previous unit by the appropriate conversion factor.
+
+// The calculated age values are then used to update the content of specific HTML elements on the page. For example, Math.floor(ageInYears) gives the number of full years, which is assigned to the innerHTML property of the HTML element with the id 'years'. Similarly, other age values are updated in their respective HTML elements.
+
+// Finally, the reset() function is provided to reload the page when called. This can be used to reset the age calculation and start over.
+
+// By using setInterval(), the code continuously updates the age values in real-time, ensuring that the displayed age is always up to date.
